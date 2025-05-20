@@ -1,0 +1,251 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Araceli - Mis XV Años en el País de las Maravillas</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Lato:wght@300;400;700&family=Great+Vibes&family=Roboto+Slab:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>
+            body { 
+                font-family: 'Lato', sans-serif; 
+                background-color: #1a1a2e; 
+                color: #e0e0e0; 
+                margin: 0; padding: 0; box-sizing: border-box; 
+            }
+            *, *:before, *:after { box-sizing: inherit; }
+            .font-theme-heading { font-family: 'MedievalSharp', cursive; }
+            
+            .section-card { 
+                background-color: #20203a; 
+                border: 1px solid #5A3A73;
+                color: #e0e0e0; 
+            }
+
+            .btn-primary { 
+                background-color: #5A3A73; 
+                color: white; 
+                transition: background-color 0.3s ease, transform 0.3s ease; 
+                font-family: 'Lato', sans-serif; 
+                padding: 0.75rem 1.5rem; 
+                border-radius: 0.5rem; 
+                font-weight: 600; 
+                display: inline-block; 
+                text-decoration: none; 
+            }
+            .btn-primary:hover { 
+                background-color: #482e5c; 
+                transform: scale(1.05); 
+            }
+
+            .countdown-item { 
+                background-color: #10101a; 
+                border: 1px solid #5A3A73; 
+                color: #e0e0e0; 
+            }
+            .countdown-item span:first-child { 
+                font-family: 'Lato', sans-serif; 
+                color: #5A3A73; 
+            }
+
+            .thematic-divider { 
+                height: 2px; 
+                background-image: linear-gradient(to right, transparent, #5A3A73, transparent); 
+                margin: 2rem auto; 
+                width: 80%; 
+            }
+            .animate-fadeIn { 
+                opacity: 0; 
+                transform: translateY(20px); 
+                animation: fadeIn 0.8s ease-out forwards; 
+            }
+            @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+            
+            .music-control-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #5A3A73;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                z-index: 1000;
+                transition: background-color 0.3s ease;
+            }
+            .music-control-button:hover {
+                background-color: #482e5c;
+            }
+            
+        </style>
+    </head>
+    <body class="antialiased leading-relaxed">
+        
+            <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; overflow: hidden;">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="https://res.cloudinary.com/de537y5wb/video/upload/v1747331361/fondo_alicia_sghjl5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background-color: rgba(0,0,0,0.4);"></div>
+        
+
+        <div class="page-content-wrapper" style="position: relative; z-index: 1; background-color: transparent; min-height: 100vh; display: flex; flex-direction: column;">
+            <header class="relative flex flex-col items-center justify-center text-center p-6" style="flex-grow: 1; min-height: 80vh;">
+                <div class="relative z-10 animate-fadeIn" style="animation-delay: 0.2s;">
+                    <h1 class="font-theme-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Mis XV Años en el País de las Maravillas</h1>
+                    <p class="text-xl sm:text-2xl md:text-3xl font-light mb-8" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Araceli</p>
+                    <p class="text-lg sm:text-xl md:text-2xl mt-4 font-theme-heading" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">20 de Diciembre de 2025</p>
+                </div>
+            </header>
+
+            <main class="overflow-x-hidden" style="flex-shrink: 0;">
+                <section 
+                    class="intro-section-themed relative py-16 md:py-20 px-6 text-center animate-fadeIn" 
+                    style="animation-delay: 0.4s;">
+                    <div class="relative z-10 p-6 md:p-10 rounded-lg max-w-3xl mx-auto" 
+                         style="background-color: rgba(0, 0, 0, 0.25); backdrop-filter: blur(3px);">
+                        <h2 class="font-theme-heading text-3xl md:text-4xl mb-6" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Una Celebración Especial</h2>
+                        <p class="text-base md:text-lg max-w-2xl mx-auto leading-relaxed" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Con la bendición de Dios y el amor de mis padres: Lopez Hugo Ramon y Romero Elizabeth Marcela. Tenemos el honor de invitarte a mis 15 años</p>
+                    </div>
+                </section>
+                <div class="thematic-divider"></div>
+                <section id="countdown-section" class="py-12 md:py-16 px-6 text-center animate-fadeIn" style="animation-delay: 0.6s;">
+                    <h2 class="font-theme-heading text-3xl md:text-4xl mb-8" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Tiempo restante para el evento</h2>
+                    <div id="countdown-container" class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl mx-auto">
+                        <div class="countdown-item p-3 md:p-4 rounded-lg shadow-lg"><span id="days" class="block text-3xl md:text-4xl font-bold">00</span><span class="block text-xs md:text-sm">Días</span></div>
+                        <div class="countdown-item p-3 md:p-4 rounded-lg shadow-lg"><span id="hours" class="block text-3xl md:text-4xl font-bold">00</span><span class="block text-xs md:text-sm">Horas</span></div>
+                        <div class="countdown-item p-3 md:p-4 rounded-lg shadow-lg"><span id="minutes" class="block text-3xl md:text-4xl font-bold">00</span><span class="block text-xs md:text-sm">Minutos</span></div>
+                        <div class="countdown-item p-3 md:p-4 rounded-lg shadow-lg"><span id="seconds" class="block text-3xl md:text-4xl font-bold">00</span><span class="block text-xs md:text-sm">Segundos</span></div>
+                    </div>
+                    <div id="countdown-message" class="mt-6" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);"></div> 
+                </section>
+                <div class="thematic-divider"></div>
+                <section class="py-12 md:py-16 px-6 section-card rounded-xl shadow-2xl max-w-2xl mx-auto my-12 animate-fadeIn" style="animation-delay: 0.8s;">
+                    <div class="text-center p-4 md:p-6">
+                        <svg class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-6" style="color: #5A3A73;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15H4a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-2"></path><path d="M6 15V9c0-2.21.895-4.21 2.343-5.657A8 8 0 0 1 12 2a8 8 0 0 1 3.657 1.343C17.105 4.79 18 6.79 18 9v6"></path><line x1="6" y1="15" x2="18" y2="15"></line></svg>
+                        <h2 class="font-theme-heading text-3xl md:text-4xl mb-4">La Celebración</h2>
+                        <p class="text-lg md:text-xl mb-2">20 de Diciembre de 2025</p>
+                        <p class="text-lg md:text-xl mb-2">21:00 Horas</p>
+                        <p class="text-md md:text-lg mb-1 opacity-80">Salón Visage</p>
+                        <p class="text-md md:text-lg mb-4 opacity-80">Av. Lucas Braulio Areco 1872</p>
+                        <a href="https://maps.app.goo.gl/8PeWsxjpSfWTP6Gz7" target="_blank" class="btn-primary mt-4">Ver Ubicación</a>
+                    </div>
+                </section>
+                <div class="thematic-divider"></div><section class="py-12 md:py-16 px-6 text-center animate-fadeIn" style="animation-delay: 1.0s;"><h2 class="font-theme-heading text-3xl md:text-4xl mb-6" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Código de Vestimenta: Formal - Elegante</h2><svg class="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4" style="color: #FFFFFF;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25V21m-10.5 0V8.25m10.5 0S18.563 3.75 12 3.75 6.75 8.25 6.75 8.25M12 3.75V8.25m0 12.75H6.75m5.25 0H17.25" /></svg><p class="text-base md:text-lg max-w-xl mx-auto leading-relaxed" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Vístete para una velada de ensueño y misterio. 
+Se reserva el color celeste para la quinceañera</p></section>
+                <div class="thematic-divider"></div><section class="py-12 md:py-16 px-6 section-card rounded-xl shadow-2xl max-w-2xl mx-auto my-12 animate-fadeIn" style="animation-delay: 1.2s;"><div class="text-center p-4 md:p-6"><svg class="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4" style="color: #5A3A73;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A3.375 3.375 0 006.375 8.25H17.625A3.375 3.375 0 0012 4.875z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.875v6.375m6.375-6.375H5.625" /></svg><h2 class="font-theme-heading text-3xl md:text-4xl mb-4">Un Detalle del Corazón</h2><p class="text-base md:text-lg mb-4 leading-relaxed">Tu presencia es mi mejor regalo. Si aún así deseas hacerme un obsequio, será bienvenido con cariño.</p><p class="text-md opacity-80 mb-1">Alias: <span class="font-semibold" style="color: #5A3A73;">mis15araceli.mp</span></p><p class="text-md opacity-80">CBU: <span class="font-semibold" style="color: #5A3A73;">0009876543210987654321</span></p></div></section>
+                
+                <div class="thematic-divider"></div>
+                <section class="py-12 md:py-16 px-6 text-center animate-fadeIn" style="animation-delay: 1.6s;">
+                    <h2 class="font-theme-heading text-3xl md:text-4xl mb-8" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">¿Nos acompañas?</h2>
+                    <svg class="w-10 h-10 md:w-12 md:h-12 mx-auto mb-6 text-rose-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <p class="text-base md:text-lg mb-8 max-w-xl mx-auto" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Por favor, confirma tu asistencia antes del Noviembre de 2025.</p>
+                    <a href="https://wa.me/+5493764100176?text=%C2%A1Hola%20Victoria!%20Confirmo%20mi%20asistencia%20a%20tus%20XV%20A%C3%B1os." target="_blank" class="btn-primary text-lg md:text-xl">Confirmar Asistencia</a>
+                </section>
+                
+                
+            </main>
+            <footer class="py-10 md:py-12 px-6 text-center border-t mt-12 animate-fadeIn" style="animation-delay: 1.9s; border-color: #754b95;">
+                <p class="font-theme-heading text-2xl md:text-3xl mb-4" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">¡Te espero! - Araceli</p>
+                <p class="text-sm md:text-base opacity-80" style="color: #FFFFFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">"No es un evento cualquiera... es una cita de locura en el país de las maravillas. ¡No llegues tarde, el sombrerero ya puso la mesa!"</p>
+                <svg class="w-12 h-6 md:w-16 md:h-8 mx-auto mt-6 opacity-70" style="color: #FFFFFF;" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M10 30 Q 50 5, 90 30" /><path d="M20 15 Q 50 0, 80 15" stroke-width="2" /></svg>
+            </footer>
+        </div>
+
+        
+            <audio id="backgroundMusic" loop>
+                <source src="https://res.cloudinary.com/de537y5wb/video/upload/v1747703867/Alice_s_Theme_From_Alice_in_WonderlandSoundtrack_Version_kjkcl3.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <button id="musicControlButton" class="music-control-button" title="Reproducir/Pausar Música">
+                <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="bi bi-play-fill"><path d="m11.596 8.697-6.363 3.692c-.54.313-.878-.043-.878-.627V4.263c0-.584.338-.94.878-.627l6.363 3.692a.802.802 0 0 1 0 1.372z"/></svg>
+                <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="bi bi-pause-fill" style="display:none;"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v14a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v14a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+            </button>
+        
+
+        <script>
+            function setupCountdown() {
+                const eventDateValue = "2025-12-20T21:00";
+                const countdownContainer = document.getElementById("countdown-container");
+                const countdownMessageEl = document.getElementById("countdown-message");
+                const countdownSectionHeading = document.querySelector("#countdown-section h2");
+                if (!eventDateValue) {
+                    if (countdownContainer) countdownContainer.style.display = 'none';
+                    if (countdownMessageEl) countdownMessageEl.innerHTML = "<p class='text-lg opacity-80'>Fecha del evento no especificada.</p>";
+                    return;
+                }
+                const eventTime = new Date(eventDateValue).getTime();
+                if (isNaN(eventTime)) {
+                    if (countdownContainer) countdownContainer.style.display = 'none';
+                    if (countdownMessageEl) countdownMessageEl.innerHTML = "<p class='text-lg text-red-400'>La fecha del evento no es válida.</p>";
+                    return;
+                }
+                function updateCountdown() {
+                    const now = new Date().getTime();
+                    const distance = eventTime - now;
+                    if (distance < 0) {
+                        clearInterval(intervalId);
+                        if (countdownSectionHeading) countdownSectionHeading.innerHTML = "¡El gran día ha llegado!";
+                        if (countdownContainer) countdownContainer.style.display = 'none';
+                        if (countdownMessageEl) countdownMessageEl.innerHTML = "<p class='text-xl font-semibold'>¡Esperamos que disfrutes el evento!</p>";
+                        return;
+                    }
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    const daysEl = document.getElementById("days");
+                    const hoursEl = document.getElementById("hours");
+                    const minutesEl = document.getElementById("minutes");
+                    const secondsEl = document.getElementById("seconds");
+                    if(daysEl) daysEl.innerText = String(days).padStart(2, '0');
+                    if(hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
+                    if(minutesEl) minutesEl.innerText = String(minutes).padStart(2, '0');
+                    if(secondsEl) secondsEl.innerText = String(seconds).padStart(2, '0');
+                }
+                const intervalId = setInterval(updateCountdown, 1000);
+                updateCountdown();
+            }
+            
+            function setupMusicPlayer() {
+                const music = document.getElementById('backgroundMusic');
+                const controlButton = document.getElementById('musicControlButton');
+                const playIcon = document.getElementById('playIcon');
+                const pauseIcon = document.getElementById('pauseIcon');
+
+                if (music && controlButton && playIcon && pauseIcon) {
+                    controlButton.addEventListener('click', function() {
+                        if (music.paused) {
+                            music.play().catch(error => console.error("Error al reproducir música:", error)); 
+                            playIcon.style.display = 'none';
+                            pauseIcon.style.display = 'inline-block';
+                        } else {
+                            music.pause();
+                            playIcon.style.display = 'inline-block';
+                            pauseIcon.style.display = 'none';
+                        }
+                    });
+                }
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => {
+                    setupCountdown();
+                    setupMusicPlayer();
+                });
+            } else {
+                setupCountdown();
+                setupMusicPlayer();
+            }
+        </script>
+    </body>
+    </html>
+  
